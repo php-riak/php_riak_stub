@@ -4,7 +4,7 @@
  * Class RiakObject
  * Represents a riak object
  */
-abstract class RiakObject
+class RiakObject
 {
     /**
      * This objects key
@@ -59,4 +59,23 @@ abstract class RiakObject
      * @var int|null
      */
     public $lastModifiedUSecs;
+
+    /**
+     * Associative array containing meta data
+     * @var array
+     */
+    public $metadata;
+
+    /**
+     * Associative array containing secondary indexes.
+     * Note: requires eleveldb backend
+     * @var array
+     */
+    public $indexes;
+
+    /**
+     * Array of links
+     * @var RiakLink[]
+     */
+    public $links;
 }

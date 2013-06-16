@@ -4,7 +4,7 @@
  * Class RiakStats
  * Various statistics
  */
-abstract class RiakStats
+class RiakStats
 {
     /**
      * Number of currently active connections

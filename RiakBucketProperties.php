@@ -4,7 +4,7 @@
  * Class RiakBucketProperties
  * Properties for a bucket
  */
-abstract class RiakBucketProperties
+class RiakBucketProperties
 {
     /**
      * @var bool allow mults in bucket
@@ -20,5 +20,5 @@ abstract class RiakBucketProperties
      * @param $nVal int n value
      * @param $allowMult bool allow mults
      */
-    public abstract function __construct($nVal, $allowMult);
+    public function __construct($nVal, $allowMult) {}
 }

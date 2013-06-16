@@ -3,7 +3,7 @@
 /**
  * Class RiakClient handles a connection to Riak
  */
-abstract class RiakClient {
+class RiakClient {
 
     /**
      * Creates a new Riak client
@@ -11,7 +11,7 @@ abstract class RiakClient {
      * @param int $port server port
      * @throws RiakConnectionException
      */
-    public abstract function __construct($host, $port=8087);
+    public function __construct($host, $port=8087) {}
 
     /**
      * Ping the Riak server, if no exception is thrown ping was successfull
@@ -19,5 +19,5 @@ abstract class RiakClient {
      * @throws RiakResponseException
      * @return void
      */
-    public abstract function ping();
+    public function ping() {}
 }

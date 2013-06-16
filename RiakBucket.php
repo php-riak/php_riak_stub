@@ -4,14 +4,14 @@
  * Class RiakBucket
  * Class that handles all functions related to specific bucket
  */
-abstract class RiakBucket {
+class RiakBucket {
 
     /**
      * Create a new bucket object
      * @param RiakClient $client riak client
      * @param string $name name of the bucket
      */
-    public abstract function __construct($client, $name);
+    public function __construct($client, $name) {}
 
     /**
      * Store an object
@@ -22,7 +22,7 @@ abstract class RiakBucket {
      * @throws RiakCommunicationException
      * @return void
      */
-    public abstract function putObject($object, $key);
+    public function putObject($object, $key) {}
 
     /**
      * Retrive an object from riak, if the key is not found on server an not found exception is thrown, if the object
@@ -35,7 +35,7 @@ abstract class RiakBucket {
      * @throws RiakConflictedObjectException
      * @return RiakObject
      */
-    public abstract function getObject($key);
+    public function getObject($key) {}
 
     /**
      * Deletes an object from the server
@@ -45,7 +45,7 @@ abstract class RiakBucket {
      * @throws RiakCommunicationException
      * @return void
      */
-    public abstract function deleteObject($object);
+    public function deleteObject($object) {}
 
     /**
      * Apply bucket properties
@@ -55,7 +55,7 @@ abstract class RiakBucket {
      * @throws RiakCommunicationException
      * @return void
      */
-    public abstract function applyProperties($properties);
+    public function applyProperties($properties) {}
 
     /**
      * Fetch current properties
@@ -64,6 +64,6 @@ abstract class RiakBucket {
      * @throws RiakCommunicationException
      * @return RiakBucketProperties
      */
-    public abstract function fetchProperties();
+    public function fetchProperties() {}
 
 }
