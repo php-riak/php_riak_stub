@@ -22,7 +22,7 @@ class RiakBucket {
      * @throws RiakCommunicationException
      * @return void
      */
-    public function putObject($object, $key) {}
+    public function put($object, $key) {}
 
     /**
      * Retrive an object from riak, if the key is not found on server an not found exception is thrown, if the object
@@ -35,7 +35,7 @@ class RiakBucket {
      * @throws RiakConflictedObjectException
      * @return RiakObject
      */
-    public function getObject($key) {}
+    public function get($key) {}
 
     /**
      * Deletes an object from the server
@@ -45,7 +45,7 @@ class RiakBucket {
      * @throws RiakCommunicationException
      * @return void
      */
-    public function deleteObject($object) {}
+    public function delete($object) {}
 
     /**
      * Apply bucket properties
