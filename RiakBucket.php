@@ -20,7 +20,7 @@ class RiakBucket {
      * @throws RiakBadArgumentsException
      * @throws RiakResponseException
      * @throws RiakCommunicationException
-     * @return void
+     * @return RiakObject
      */
     public function put($object, $key) {}
 
