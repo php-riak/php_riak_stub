@@ -6,6 +6,37 @@
  */
 class RiakBucket {
 
+
+    /**
+     * @var int default w value to use, defaults to the value of RiakClient->$w
+     */
+    public $w;
+
+    /**
+     * @var int default dw value to use, defaults to the value of RiakClient->$dw
+     */
+    public $dw;
+
+    /**
+     * @var int default pw value to use, defaults to the value of RiakClient->$pw
+     */
+    public $pw;
+
+    /**
+     * @var int default r value to use, defaults to the value of RiakClient->$r
+     */
+    public $r;
+
+    /**
+     * @var int default rw value to use, defaults to the value of RiakClient->$rw
+     */
+    public $rw;
+
+    /**
+     * @var int default pr value to use, defaults to the value of RiakClient->$pr
+     */
+    public $pr;
+
     /**
      * Create a new bucket object
      * @param RiakClient $client riak client
@@ -16,13 +47,12 @@ class RiakBucket {
     /**
      * Store an object
      * @param RiakObject $object
-     * @param string $key
      * @throws RiakBadArgumentsException
      * @throws RiakResponseException
      * @throws RiakCommunicationException
      * @return RiakObject
      */
-    public function put($object, $key) {}
+    public function put($object) {}
 
     /**
      * Retrive an object from riak, if the key is not found on server an not found exception is thrown, if the object
