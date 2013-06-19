@@ -47,17 +47,19 @@ class RiakBucket {
     /**
      * Store an object
      * @param RiakObject $object
+     * @param RiakPutRequestConfiguration $config request specific configuration
      * @throws RiakBadArgumentsException
      * @throws RiakResponseException
      * @throws RiakCommunicationException
      * @return RiakObject
      */
-    public function put($object) {}
+    public function put($object, $config = null) {}
 
     /**
      * Retrive an object from riak, if the key is not found on server an not found exception is thrown, if the object
      * has siblings an conflicted exception is thrown.
      * @param string $key
+     * @param RiakGetRequestConfiguration $config request specific configuration
      * @throws RiakBadArgumentsException
      * @throws RiakResponseException
      * @throws RiakCommunicationException
@@ -65,7 +67,7 @@ class RiakBucket {
      * @throws RiakConflictedObjectException
      * @return RiakObject
      */
-    public function get($key) {}
+    public function get($key, $config = null) {}
 
     /**
      * Deletes an object from the server
