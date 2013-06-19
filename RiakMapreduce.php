@@ -13,9 +13,9 @@ class RiakMapreduce {
 
     /**
      * Add a new phase to this map reduce job, atleast one phase needs to be added before a mapreduce query can succeed
-     * @param RiakMapreducePhase $phase
+     * @param RiakMrPhase $phase
      */
-    public function addPhase(RiakMapreducePhase $phase) {}
+    public function addPhase(RiakMrPhase $phase) {}
 
     /**
      * Set mapreduce input, needs to be set for a mapreduce query to succeed

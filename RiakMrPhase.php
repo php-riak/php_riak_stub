@@ -4,7 +4,7 @@
  * Class RiakMapreducePhase
  * A mapreduce phase like map or reduce
  */
-class RiakMapreducePhase {
+class RiakMrPhase {
 
     /**
      * @param string $type which phase eg. reduce or map

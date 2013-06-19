@@ -96,4 +96,35 @@ class RiakBucket {
      */
     public function fetchProperties() {}
 
+    /**
+     * List all keys in the bucket.
+     * WARNING do not use this function in production
+     * @throws RiakBadArgumentsException
+     * @throws RiakResponseException
+     * @throws RiakCommunicationException
+     * @return string[]
+     */
+    public function listKeys() {}
+
+    /**
+     * Stream all keys in the bucket
+     * WARNING do not use this function in production
+     * @param RiakMrStreamer $streamer object that will get the stream callbacks
+     * @throws RiakBadArgumentsException
+     * @throws RiakResponseException
+     * @throws RiakCommunicationException
+     * @return void
+     */
+    public function streamKeys($streamer) {}
+
+    /**
+     * Performs an secondary index query, if no $to is provided the query will match exactly $from and nothing else.
+     * if both $from and $to is provided the query will return the range.
+     * @param string $index name of the index to query, including _int or _bin
+     * @param string $from what value to start from [inclusive]
+     * @param string $to end value
+     * @return string[]
+     */
+    public function indexQuery($index, $from, $to = null) {}
+
 }
