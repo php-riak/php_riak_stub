@@ -1,9 +1,13 @@
 <?php
 
+namespace Riak\MapReduce\Functions;
+
 /**
- * Class RiakMrFunction
+ * Class BaseFunction
+ * @package Riak\MapReduce\Functions
+ * Base function for map reduce functions
  */
-abstract class RiakMrFunction {
+abstract class BaseFunction {
 
     /**
      * Converts this into into an array, that will be converted to json by the RiakMapreduce class.

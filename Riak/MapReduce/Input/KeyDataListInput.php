@@ -1,10 +1,13 @@
 <?php
 
+namespace Riak\MapReduce\Input;
+
 /**
  * Class RiakMrInputKeyDataList
  * Mapreduce input class containing a list of bucket, key and data´s
  */
-class RiakMrInputKeyDataList extends RiakMrInput {
+class KeyDataListInput extends Input
+{
 
     /**
      * array of [bucket, key, data]
@@ -12,10 +15,9 @@ class RiakMrInputKeyDataList extends RiakMrInput {
      */
     protected $inputList;
 
-    /**
-     * Add a bucket/key/data set to input
-     * @param string|RiakBucket $bucket
-     * @param string|RiakObject $key
+    /** Add a bucket/key/data set to input
+     * @param string|\RiakBucket $bucket bucket or bucket name
+     * @param string|\RiakObject $key key
      * @param string $data
      */
     public function add($bucket, $key, $data) {}
@@ -26,4 +28,5 @@ class RiakMrInputKeyDataList extends RiakMrInput {
      * @return mixed
      */
     public function getValue() {}
+
 }

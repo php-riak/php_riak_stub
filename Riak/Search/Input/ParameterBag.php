@@ -1,7 +1,11 @@
 <?php
 namespace Riak\Search\Input;
 
-
+/**
+ * Class ParameterBag
+ * @package Riak\Search\Input
+ * Extra parameters that can be passed to riak search
+ */
 class ParameterBag
 {
     /**
@@ -40,7 +44,7 @@ class ParameterBag
     protected $presort = null;
 
     /**
-     * @var null|array
+     * @var null|string[]
      */
     protected $fieldLimits = null;
 
@@ -113,5 +117,15 @@ class ParameterBag
      * @return null|string presort or null if not set
      */
     public function getPresort() {}
+
+    /** Limit search to these fields
+     * @param \string[] $fieldLimits
+     */
+    public function setFieldLimits($fieldLimits) {}
+
+    /** Get field limits for this search
+     * @return null|\string[] limits or null if it has been set
+     */
+    public function getFieldLimits() {}
 
 }
