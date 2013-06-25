@@ -81,7 +81,7 @@ class RiakBucket {
 
     /**
      * Apply bucket properties
-     * @param $properties RiakBucketProperties
+     * @param $properties BucketPropertyList
      * @throws RiakBadArgumentsException
      * @throws RiakResponseException
      * @throws RiakCommunicationException
@@ -94,7 +94,7 @@ class RiakBucket {
      * @throws RiakBadArgumentsException
      * @throws RiakResponseException
      * @throws RiakCommunicationException
-     * @return RiakBucketProperties
+     * @return BucketPropertyList
      */
     public function fetchProperties() {}
 
