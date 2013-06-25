@@ -111,7 +111,7 @@ class RiakBucket {
     /**
      * Stream all keys in the bucket
      * WARNING do not use this function in production
-     * @param RiakMrStreamer $streamer object that will get the stream callbacks
+     * @param StreamOutput $streamer object that will get the stream callbacks
      * @throws RiakBadArgumentsException
      * @throws RiakResponseException
      * @throws RiakCommunicationException

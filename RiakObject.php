@@ -75,7 +75,7 @@ class RiakObject
 
     /**
      * Array of links
-     * @var RiakLink[]
+     * @var Link[]
      */
     public $links;
 }
