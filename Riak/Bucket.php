@@ -98,7 +98,7 @@ class Bucket
      * @param string $to end value
      * @return string[]
      */
-    public function indexQuery($index, $from, $to = null) {}
+    public function index($index, $from, $to = null) {}
 
     /**
      * Get name of this bucket
