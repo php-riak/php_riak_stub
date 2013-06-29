@@ -1,10 +1,11 @@
 <?php
+namespace Riak\Output;
 
-interface RiakKeyStreamer
+interface KeyStreamOutput
 {
     /**
      * @param string $key received a key from riak
      * @return void
      */
-    public function key($key);
+    public function process($key);
 }

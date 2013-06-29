@@ -16,8 +16,8 @@ class KeyDataListInput extends Input
     protected $inputList;
 
     /** Add a bucket/key/data set to input
-     * @param string|\RiakBucket $bucket bucket or bucket name
-     * @param string|\RiakObject $key key
+     * @param string|\Bucket $bucket bucket or bucket name
+     * @param string|\Object $key key
      * @param string $data
      */
     public function add($bucket, $key, $data) {}

@@ -13,14 +13,14 @@ class Search
 {
 
     /**
-     * @var \RiakClient
+     * @var \Connection
      */
     protected $client;
 
     /** Create a new riak search
-     * @param \RiakClient $client
+     * @param \Connection $client
      */
-    public function __construct(\RiakClient $client) {}
+    public function __construct(\Connection $client) {}
 
     /**
      * Performs a riak search

@@ -18,7 +18,7 @@ class MapReduce
     private $phases;
 
     /**
-     * @var \RiakClient
+     * @var \Connection
      */
     private $client;
 
@@ -28,9 +28,9 @@ class MapReduce
     private $input;
 
     /**
-     * @param \RiakClient $client
+     * @param \Connection $client
      */
-    public function __construct(\RiakClient $client) {}
+    public function __construct(\Connection $client) {}
 
     /**
      * Add a new phase to this map reduce job, atleast one phase needs to be added before a mapreduce query can succeed
@@ -51,7 +51,7 @@ class MapReduce
      * @throws \RiakBadArgumentsException
      * @throws \RiakResponseException
      * @throws \RiakCommunicationException
-     * @return \RiakObject
+     * @return \Object
      */
     public function run($streamer = null) {}
 
