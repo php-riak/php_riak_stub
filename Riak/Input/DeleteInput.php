@@ -46,6 +46,7 @@ class DeleteInput extends Input
 
     /** Set DW value
      * @param int $dw
+     * @return DeleteInput
      */
     public function setDW($dw) {}
 
@@ -56,6 +57,7 @@ class DeleteInput extends Input
 
     /** Set PR value
      * @param int $pr
+     * @return DeleteInput
      */
     public function setPR($pr) {}
 
@@ -66,6 +68,7 @@ class DeleteInput extends Input
 
     /** Set PW value
      * @param int $pw
+     * @return DeleteInput
      */
     public function setPW($pw) {}
 
@@ -75,6 +78,7 @@ class DeleteInput extends Input
     public function getPW() {}
 
     /** Set R value
+     * @return DeleteInput
      * @param int $r
      */
     public function setR($r) {}
@@ -86,6 +90,7 @@ class DeleteInput extends Input
 
     /** Set RW value
      * @param int $rw
+     * @return DeleteInput
      */
     public function setRW($rw) {}
 
@@ -96,6 +101,7 @@ class DeleteInput extends Input
 
     /** Set vclock
      * @param string $vClock
+     * @return DeleteInput
      */
     public function setVClock($vClock) {}
 
@@ -106,6 +112,7 @@ class DeleteInput extends Input
 
     /** Set W value
      * @param int $w
+     * @return DeleteInput
      */
     public function setW($w) {}
 

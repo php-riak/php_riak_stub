@@ -27,6 +27,7 @@ class BucketPropertyList
 
     /** Set allow mult for bucket
      * @param boolean $allowMult
+     * @return BucketPropertyList
      */
     public function setAllowMult($allowMult) {}
 
@@ -37,6 +38,7 @@ class BucketPropertyList
 
     /** Set n-value for bucket
      * @param int $nVal
+     * @return BucketPropertyList
      */
     public function setNValue($nVal) {}
 

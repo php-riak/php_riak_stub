@@ -43,6 +43,7 @@ class BucketInput extends Input
      * @param string $indexName name of the index to filter on, should always end on _int or _bin
      * @param string $start start value inclusive
      * @param null|string $end end value inclusive
+     * @return BucketInput
      */
     public function setIndexFilter($indexName, $start, $end = null) {}
 

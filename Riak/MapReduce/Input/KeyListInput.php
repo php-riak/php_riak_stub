@@ -27,6 +27,7 @@ class KeyListInput extends Input
      * Add bucket/key inputs to the current list, $bucketKeys must be an array with ["bucket" => "key", "bucket2" => "key2"] or
      * ["bucket" => ["key1", "key2"]]
      * @param array $bucketKeys
+     * @return KeyListInput
      */
     public function addArray($bucketKeys) {}
 
@@ -34,6 +35,7 @@ class KeyListInput extends Input
      * Add a single bucket/key to the current list of inputs
      * @param string $bucket
      * @param string $key
+     * @return KeyListInput
      */
     public function addSingle($bucket, $key) {}
 

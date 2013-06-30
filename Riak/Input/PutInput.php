@@ -51,6 +51,7 @@ class PutInput extends Input
 
     /** Set DW value
      * @param int $dw
+     * @return PutInput
      */
     public function setDW($dw) {}
 
@@ -61,6 +62,7 @@ class PutInput extends Input
 
     /** Set if none match
      * @param bool $ifNoneMatch
+     * @return PutInput
      */
     public function setIfNoneMatch($ifNoneMatch) {}
 
@@ -71,6 +73,7 @@ class PutInput extends Input
 
     /** Set if not modified
      * @param bool $ifNotModified
+     * @return PutInput
      */
     public function setIfNotModified($ifNotModified) {}
 
@@ -81,6 +84,7 @@ class PutInput extends Input
 
     /** Set PW value
      * @param int|null $pw
+     * @return PutInput
      */
     public function setPW($pw) {}
 
@@ -91,6 +95,7 @@ class PutInput extends Input
 
     /** Set return body
      * @param bool $returnBody
+     * @return PutInput
      */
     public function setReturnBody($returnBody) {}
 
@@ -101,6 +106,7 @@ class PutInput extends Input
 
     /** Set return head
      * @param bool $returnHead
+     * @return PutInput
      */
     public function setReturnHead($returnHead) {}
 
@@ -111,6 +117,7 @@ class PutInput extends Input
 
     /** Set VClock
      * @param string $vClock
+     * @return PutInput
      */
     public function setVClock($vClock) {}
 
@@ -121,6 +128,7 @@ class PutInput extends Input
 
     /** Set W value
      * @param int $w
+     * @return PutInput
      */
     public function setW($w) {}
 

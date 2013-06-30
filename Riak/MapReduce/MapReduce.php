@@ -1,7 +1,12 @@
 <?php
 
 namespace Riak\MapReduce;
+use Riak\Connection;
+use Riak\Exception\BadArgumentsException;
+use Riak\Exception\CommunicationException;
+use Riak\Exception\UnexpectedResponseException;
 use Riak\MapReduce\Input\Input;
+use Riak\MapReduce\Output\Output;
 use Riak\MapReduce\Phase\Phase;
 
 /**
@@ -11,26 +16,10 @@ use Riak\MapReduce\Phase\Phase;
  */
 class MapReduce
 {
-
     /**
-     * @var Phase[]
+     * @param Connection $connection
      */
-    private $phases;
-
-    /**
-     * @var \Connection
-     */
-    private $client;
-
-    /**
-     * @var Input
-     */
-    private $input;
-
-    /**
-     * @param \Connection $client
-     */
-    public function __construct(\Connection $client) {}
+    public function __construct(Connection $connection) {}
 
     /**
      * Add a new phase to this map reduce job, atleast one phase needs to be added before a mapreduce query can succeed
@@ -48,24 +37,24 @@ class MapReduce
      * Runs the mapreduce query and either returns the results as an array of Output or streams it to supplied $streamer
      * @param null $streamer
      * @return array|null
-     * @throws \RiakBadArgumentsException
-     * @throws \RiakResponseException
-     * @throws \RiakCommunicationException
-     * @return \Object
+     * @throws BadArgumentsException
+     * @throws UnexpectedResponseException
+     * @throws CommunicationException
+     * @return Output[]|null
      */
     public function run($streamer = null) {}
 
     /**
      * Get the current mapreduce query as an array, this is mostly useful when debugging failing mr queries
      * @return array
-     * @throws \RiakBadArgumentsException if input or phase has not been set
+     * @throws BadArgumentsException if input or phase has not been set
      */
     public function toArray() {}
 
     /**
      * Get the current mapreduce query as an json string, this is mostly useful when debugging failing mr queries
      * @return string
-     * @throws \RiakBadArgumentsException if input or phase has not been set
+     * @throws BadArgumentsException if input or phase has not been set
      */
     public function toJson() {}
 

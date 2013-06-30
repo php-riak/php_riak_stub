@@ -50,6 +50,7 @@ class ParameterBag
 
     /** Set row limit for search
      * @param int $rowLimit
+     * @return ParameterBag
      */
     public function setRowLimit($rowLimit) {}
 
@@ -60,6 +61,7 @@ class ParameterBag
 
     /** Set start offset for search
      * @param int $start
+     * @return ParameterBag
      */
     public function setStartOffset($start) {}
 
@@ -70,6 +72,7 @@ class ParameterBag
 
     /** Set sort string for search
      * @param string $sort
+     * @return ParameterBag
      */
     public function setSort($sort) {}
 
@@ -80,6 +83,7 @@ class ParameterBag
 
     /** Set filter for search
      * @param string $filter
+     * @return ParameterBag
      */
     public function setFilter($filter) {}
 
@@ -90,6 +94,7 @@ class ParameterBag
 
     /** Set default field for search
      * @param string $defaultField
+     * @return ParameterBag
      */
     public function setDefaultField($defaultField) {}
 
@@ -100,6 +105,7 @@ class ParameterBag
 
     /** Set default operation for search
      * @param string $defaultOperation
+     * @return ParameterBag
      */
     public function setDefaultOperation($defaultOperation) {}
 
@@ -110,6 +116,7 @@ class ParameterBag
 
     /** Set presort for this search
      * @param string $presort
+     * @return ParameterBag
      */
     public function setPresort($presort) {}
 
@@ -120,6 +127,7 @@ class ParameterBag
 
     /** Limit search to these fields
      * @param \string[] $fieldLimits
+     * @return ParameterBag
      */
     public function setFieldLimits($fieldLimits) {}
 

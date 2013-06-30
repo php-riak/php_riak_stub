@@ -46,6 +46,7 @@ class GetInput extends Input
 
     /** Set basic quorum
      * @param bool $basicQuorum
+     * @return GetInput
      */
     public function setBasicQuorum($basicQuorum) {}
 
@@ -56,6 +57,7 @@ class GetInput extends Input
 
     /** Set return deleted vclock
      * @param bool $deletedVClock
+     * @return GetInput
      */
     public function setReturnDeletedVClock($deletedVClock) {}
 
@@ -66,6 +68,7 @@ class GetInput extends Input
 
     /** Set if modified vclock
      * @param string $ifModifiedVClock
+     * @return GetInput
      */
     public function setIfModifiedVClock($ifModifiedVClock) {}
 
@@ -76,6 +79,7 @@ class GetInput extends Input
 
     /** Set not found ok
      * @param bool $notFoundOk
+     * @return GetInput
      */
     public function setNotFoundOk($notFoundOk) {}
 
@@ -86,6 +90,7 @@ class GetInput extends Input
 
     /** Set PR value
      * @param int $pr
+     * @return GetInput
      */
     public function setPr($pr) {}
 
@@ -96,6 +101,7 @@ class GetInput extends Input
 
     /** Set R value
      * @param int $r
+     * @return GetInput
      */
     public function setR($r) {}
 
@@ -106,6 +112,7 @@ class GetInput extends Input
 
     /** Set return head
      * @param bool $returnHead
+     * @return GetInput
      */
     public function setReturnHead($returnHead) {}
 

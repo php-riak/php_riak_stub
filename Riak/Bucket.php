@@ -2,6 +2,7 @@
 
 namespace Riak;
 use Riak\Output\GetOutput;
+use Riak\Output\PutOutput;
 
 /**
  * Class Bucket
@@ -24,7 +25,7 @@ class Bucket
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
-     * @return Object
+     * @return PutOutput
      */
     public function put($object, $input = null) {}
 

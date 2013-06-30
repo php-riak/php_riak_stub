@@ -19,6 +19,7 @@ class KeyDataListInput extends Input
      * @param string|\Bucket $bucket bucket or bucket name
      * @param string|\Object $key key
      * @param string $data
+     * @return KeyDataListInput
      */
     public function add($bucket, $key, $data) {}
 
