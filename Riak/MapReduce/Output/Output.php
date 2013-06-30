@@ -9,20 +9,20 @@ namespace Riak\MapReduce\Output;
 class Output
 {
     /**
-     * @var mixed json decoded value
-     */
-    public $value;
-    // TODO Make private and add getter
-
-    /**
-     * @var null|int phase identifier
-     */
-    public $phase;
-    // TODO Make private and add hasPhase + getPhase
-
-    /**
      * @param mixed $value
      * @param null|int $phase phase identifier
      */
     public function __construct($value, $phase = null) {}
+
+    /**
+     * Get decoded value from this mr output
+     * @return mixed
+     */
+    public function getValue() {}
+
+    /**
+     * Get phase number if set in response
+     * @return int|null
+     */
+    public function getPhaseNumber() {}
 }
