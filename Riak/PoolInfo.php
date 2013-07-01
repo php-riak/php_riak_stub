@@ -1,10 +1,13 @@
 <?php
 
+namespace Riak;
+
 /**
- * Class RiakStats
+ * Class PoolInfo
+ * @package Riak
  * Various statistics
  */
-class RiakStats
+class PoolInfo
 {
     /**
      * Number of currently active connections
