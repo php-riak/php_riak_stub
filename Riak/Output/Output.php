@@ -47,4 +47,14 @@ class Output
      */
     public function getKey() {}
 
+    /** Does this output have atleast one object
+     * @return boolean
+     */
+    public function hasObject() {}
+
+    /** Get first object in objectlist
+     * Object|null
+     */
+    public function getFirstObject() {}
+
 }
