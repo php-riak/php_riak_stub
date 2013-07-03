@@ -13,13 +13,13 @@ class PoolInfo
      * Number of currently active connections
      * @return int
      */
-    public static function activeConnections() {}
+    public static function getNumActiveConnection() {}
 
     /**
      * Number of currently active persistent connections
      * @return int
      */
-    public static function activePersistentConnections() {}
+    public static function getNumActivePersistentConnection() {}
 
     /**
      * How many times did we riack clients reconnect.
@@ -28,5 +28,5 @@ class PoolInfo
      * Keep a close look on this number and monitor your code closely if it rises fast.
      * @return int
      */
-    public static function getNumReconnects() {}
+    public static function getNumReconnect() {}
 }
