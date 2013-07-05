@@ -1,8 +1,6 @@
 <?php
 
 namespace Riak;
-use Riak\Output\GetOutput;
-use Riak\Output\PutOutput;
 
 /**
  * Class Bucket
@@ -20,12 +18,12 @@ class Bucket
 
     /**
      * Store an object
-     * @param Object $object
+     * @param \Riak\Object $object
      * @param Input\PutInput $input optional put request input
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
-     * @return PutOutput
+     * @return \Riak\Output\PutOutput
      */
     public function put($object, $input = null) {}
 
@@ -37,13 +35,13 @@ class Bucket
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
      * @throws Exception\NotFoundException
-     * @return GetOutput
+     * @return \Riak\Output\GetOutput
      */
     public function get($key, $input = null) {}
 
     /**
      * Deletes an object from the server
-     * @param Object|string $object object or name of object to delete
+     * @param \Riak\Object|string $object object or name of object to delete
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException

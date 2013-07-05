@@ -19,13 +19,13 @@ class Output
     protected $vClock = null;
 
     /**
-     * @var Object[]
+     * @var \Riak\Object[]
      */
     protected $objectList  = array();
 
     /**
      * Get list of returned objects
-     * @return Object[]|null
+     * @return \Riak\Object[]|null
      */
     public function getObjectList() {}
 
@@ -34,7 +34,6 @@ class Output
      * @return string|null
      */
     public function getVClock() {}
-
 
     /**
      * Does this output contain more than one object
@@ -53,7 +52,7 @@ class Output
     public function hasObject() {}
 
     /** Get first object in objectlist
-     * Object|null
+     * @return \Riak\Object
      */
     public function getFirstObject() {}
 
