@@ -3,6 +3,7 @@
 namespace Riak;
 use Riak\Property\CommitHookList;
 use Riak\Property\ModuleFunction;
+use Riak\Property\ReplicationMode\ReplicationMode;
 
 /**
  * Class BucketPropertyList
@@ -259,10 +260,14 @@ class BucketPropertyList
      */
     public function getCHashKeyFun() {}
 
-        // Riak 1.4+ properties
-    /* TODO
-    uint8_t replication_mode_use;
-    enum RIACK_REPLICATION_MODE replication_mode;
-     * */
+    /** IMPORTANT Only supported by riak 1.4+
+     * @param ReplicationMode $replicationMode
+     */
+    public function setReplicationMode(ReplicationMode $replicationMode) {}
+
+    /** IMPORTANT Only supported by riak 1.4+
+     * @return ReplicationMode|null
+     */
+    public function getReplicationMode() {}
 
 }
