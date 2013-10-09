@@ -1,6 +1,8 @@
 <?php
 
 namespace Riak;
+use Riak\Input\PutInput;
+use Riak\Output\KeyStreamOutput;
 
 /**
  * Class Bucket
@@ -14,7 +16,7 @@ class Bucket
      * @param Connection $connection riak connection
      * @param string $name name of the bucket
      */
-    public function __construct($connection, $name) {}
+    public function __construct(Connection $connection, $name) {}
 
     /**
      * Store an object
@@ -25,7 +27,7 @@ class Bucket
      * @throws Exception\CommunicationException
      * @return \Riak\Output\PutOutput
      */
-    public function put($object, $input = null) {}
+    public function put(Object $object, PutInput $input = null) {}
 
     /**
      * Retrive an object from riak, if the key is not found on server an not found exception is thrown.
@@ -87,7 +89,7 @@ class Bucket
      * @throws Exception\CommunicationException
      * @return void
      */
-    public function getKeyStream($stream) {}
+    public function getKeyStream(KeyStreamOutput $stream) {}
 
     /**
      * Performs an secondary index query, if no $to is provided the query will match exactly $from and nothing else.
