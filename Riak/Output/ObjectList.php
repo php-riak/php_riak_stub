@@ -13,7 +13,7 @@ class ObjectList implements \ArrayAccess, \Countable, \IteratorAggregate
     public function first() {}
 
     /**
-     * @return int
+     * @return bool
      */
     public function isEmpty() {}
 
