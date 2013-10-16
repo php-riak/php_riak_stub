@@ -17,12 +17,14 @@ class MapReduce
     /**
      * Add a new phase to this map reduce job, atleast one phase needs to be added before a mapreduce query can succeed
      * @param \Riak\MapReduce\Phase\Phase $phase
+     * @return MapReduce
      */
     public function addPhase(\Riak\MapReduce\Phase\Phase $phase) {}
 
     /**
      * Set mapreduce input, needs to be set for a mapreduce query to succeed
      * @param \Riak\MapReduce\Input\Input $input
+     * @return MapReduce
      */
     public function setInput(\Riak\MapReduce\Input\Input $input) {}
 

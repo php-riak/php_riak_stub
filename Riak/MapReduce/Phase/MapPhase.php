@@ -14,7 +14,7 @@ class MapPhase extends Phase
      * @param bool $keep keep
      * @param array $args function arguments
      */
-    public function __construct($function, $keep, $args = null) {}
+    public function __construct($function, $keep = false, $args = null) {}
 
     /** Converts this phase into an array.
      * @return array
