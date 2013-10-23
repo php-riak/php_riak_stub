@@ -1,6 +1,7 @@
 <?php
 
 namespace Riak\Output;
+use Riak\ObjectList;
 
 /**
  * Class Output
@@ -25,7 +26,7 @@ class Output
 
     /**
      * Get list of returned objects
-     * @return \Riak\Object[]|null
+     * @return ObjectList
      */
     public function getObjectList() {}
 
