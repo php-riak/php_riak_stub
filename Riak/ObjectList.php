@@ -1,6 +1,6 @@
 <?php
 
-namespace Riak\Output;
+namespace Riak;
 
 use Traversable;
 

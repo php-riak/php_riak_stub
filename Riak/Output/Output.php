@@ -1,6 +1,7 @@
 <?php
 
 namespace Riak\Output;
+use Riak\ObjectList;
 
 /**
  * Class Output
