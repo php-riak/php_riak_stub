@@ -1,8 +1,11 @@
 <?php
 
 namespace Riak;
+use Riak\Input\IndexInput;
 use Riak\Input\PutInput;
+use Riak\Output\IndexOutput;
 use Riak\Output\KeyStreamOutput;
+use Riak\Query\IndexQuery;
 
 /**
  * Class Bucket
@@ -100,6 +103,14 @@ class Bucket
      * @return string[]
      */
     public function index($index, $from, $to = null) {}
+
+    /**
+     * Requires riak 1.4+
+     * @param IndexQuery $query
+     * @param IndexInput $input
+     * @return IndexOutput
+     */
+    public function indexQuery(IndexQuery $query, IndexInput $input = null) {}
 
     /**
      * Get name of this bucket
