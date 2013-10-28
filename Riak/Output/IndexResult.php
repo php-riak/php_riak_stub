@@ -22,5 +22,14 @@ namespace Riak\Output;
  * @package Riak\Output
  */
 class IndexResult {
+
+    /**
+     * @param string $key
+     */
+    public function __construct($key) {}
+
+    /**
+     * @return string key
+     */
     public function getKey() {}
 } 

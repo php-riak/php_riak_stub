@@ -67,7 +67,7 @@ class IndexResultList implements \ArrayAccess, \Countable, \IteratorAggregate  {
      * </p>
      * @return void
      */
-    public function offsetSet($offset, IndexResult $value) {}
+    public function offsetSet($offset, $value) {}
 
     /**
      * (PHP 5 &gt;= 5.0.0)<br/>
