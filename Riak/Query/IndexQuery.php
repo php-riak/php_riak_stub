@@ -22,6 +22,12 @@ namespace Riak\Query;
  * @package Riak\Query
  */
 class IndexQuery {
+
+    /**
+     * @param string $name index name
+     */
+    public function __construct($name) {}
+
     /**
      * @param string $name
      * @return IndexQuery
