@@ -1,6 +1,7 @@
 <?php
 
 namespace Riak;
+use Riak\CRDT\Counter;
 use Riak\Input\IndexInput;
 use Riak\Input\PutInput;
 use Riak\Output\IndexOutput;
@@ -53,6 +54,12 @@ class Bucket
      * @return void
      */
     public function delete($object) {}
+
+    /**
+     * @param string $key
+     * @return Counter
+     */
+    public function counter($key) {}
 
     /**
      * Apply bucket properties
