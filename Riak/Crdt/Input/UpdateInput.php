@@ -6,10 +6,10 @@ namespace Riak\CRDT\Input;
  * Class IncrementInput
  * @package Riak\CRDT\Input
  */
-class PutInput {
+class UpdateInput {
     /** Set W value
      * @param int $w
-     * @return PutInput
+     * @return UpdateInput
      */
     public function setW($w) {}
 
@@ -20,7 +20,7 @@ class PutInput {
 
     /** Set DW value
      * @param int $dw
-     * @return PutInput
+     * @return UpdateInput
      */
     public function setDW($dw) {}
 
@@ -31,7 +31,7 @@ class PutInput {
 
     /** Set PW value
      * @param int|null $pw
-     * @return PutInput
+     * @return UpdateInput
      */
     public function setPW($pw) {}
 

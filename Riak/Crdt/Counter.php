@@ -5,7 +5,7 @@ namespace Riak\CRDT;
 
 use Riak\Bucket;
 use Riak\Connection;
-use Riak\CRDT\Input\PutInput;
+use Riak\CRDT\Input\UpdateInput;
 use Riak\Input\GetInput;
 
 /**
@@ -23,16 +23,16 @@ class Counter {
 
     /**
      * @param int $amount
-     * @param Input\PutInput $input
+     * @param Input\UpdateInput $input
      */
-    public function increment($amount, PutInput $input = null) {}
+    public function increment($amount, UpdateInput $input = null) {}
 
     /**
      * @param int $amount
-     * @param Input\PutInput $input
+     * @param Input\UpdateInput $input
      * @return int
      */
-    public function incrementAndGet($amount, PutInput $input = null) {}
+    public function incrementAndGet($amount, UpdateInput $input = null) {}
 
     /**
      * @param \Riak\Input\GetInput $input
