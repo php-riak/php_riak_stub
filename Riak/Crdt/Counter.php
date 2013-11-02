@@ -15,11 +15,10 @@ use Riak\Input\GetInput;
 class Counter {
 
     /**
-     * @param Connection $connection
      * @param Bucket $bucket
      * @param string $key
      */
-    public function __construct(Connection $connection, Bucket $bucket, $key) {}
+    public function __construct(Bucket $bucket, $key) {}
 
     /**
      * @param int $amount
