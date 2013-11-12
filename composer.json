@@ -1,0 +1,21 @@
+{
+    "name": "bach-pedersen/php-riak-stubs",
+    "description": "Stub classes for php_riak extension, very useful for IDE autocompletion.",
+    "homepage": "https://github.com/TriKaspar/php_riak_stub",
+    "license": "Apache-2.0",
+    "version": "0.9.0",
+    "authors": [
+        {
+            "name": "Kaspar Bach Pedersen",
+            "email": "kasparp@me.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Riak": "Riak/"
+        }
+    }
+}
