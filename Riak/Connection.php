@@ -43,4 +43,9 @@ class Connection
      * @return Bucket
      */
     public function getBucket($name) {}
+
+    /**
+     * @return ServerInfo
+     */
+    public function getServerInfo() {}
 }
