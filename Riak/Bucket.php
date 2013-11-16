@@ -2,6 +2,7 @@
 
 namespace Riak;
 use Riak\CRDT\Counter;
+use Riak\Input\DeleteInput;
 use Riak\Input\IndexInput;
 use Riak\Input\PutInput;
 use Riak\Output\IndexOutput;
@@ -47,12 +48,13 @@ class Bucket
     /**
      * Deletes an object from the server
      * @param \Riak\Object|string $object object or name of object to delete
+     * @param DeleteInput $input
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
      * @return void
      */
-    public function delete($object) {}
+    public function delete($object, $input = null) {}
 
     /**
      * @param string $key
