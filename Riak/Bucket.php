@@ -40,7 +40,6 @@ class Bucket
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
-     * @throws Exception\NotFoundException
      * @return \Riak\Output\GetOutput
      */
     public function get($key, $input = null) {}
