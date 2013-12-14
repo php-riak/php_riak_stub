@@ -121,5 +121,4 @@ class GetInput extends Input
      */
     public function getReturnHead() {}
 
-
 }

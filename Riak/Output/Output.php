@@ -1,6 +1,8 @@
 <?php
 
 namespace Riak\Output;
+use Riak\Exception\NonUniqueException;
+use Riak\Exception\UnresolvedConflictException;
 use Riak\ObjectList;
 
 /**
@@ -52,8 +54,18 @@ class Output
      */
     public function hasObject() {}
 
+    /** Get object from output, if output contains siblings this function will call the
+     * ConflictResolver given when ->get() was called or if no resolver was set it will se if a resolver
+     * is set on bucket level and call that.
+     * If no unique object can be resolve a NonUniqueException will be thrown.
+     * @return \Riak\Object|null
+     * @throws UnresolvedConflictException
+     * @throws NonUniqueException
+     */
+    public function getObject() {}
+
     /** Get first object in objectlist
-     * @return \Riak\Object
+     * @return \Riak\Object|null
      */
     public function getFirstObject() {}
 

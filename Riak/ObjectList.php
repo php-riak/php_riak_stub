@@ -13,6 +13,11 @@ class ObjectList implements \ArrayAccess, \Countable, \IteratorAggregate
     public function first() {}
 
     /**
+     * @return Object|null
+     */
+    public function last() {}
+
+    /**
      * @return bool
      */
     public function isEmpty() {}

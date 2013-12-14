@@ -5,6 +5,7 @@ use Riak\CRDT\Counter;
 use Riak\Input\DeleteInput;
 use Riak\Input\IndexInput;
 use Riak\Input\PutInput;
+use Riak\Output\ConflictResolver;
 use Riak\Output\IndexOutput;
 use Riak\Output\KeyStreamOutput;
 use Riak\Query\IndexQuery;
@@ -130,5 +131,16 @@ class Bucket
      * @return Connection
      */
     public function getConnection() {}
+
+    /**
+     * @return ConflictResolver|null
+     */
+    public function getConflictResolver() {}
+
+    /** Set a conflict resolver that should be used by default on all conflicts in this bucket.
+     * @param ConflictResolver $conflictResolver
+     * @return Bucket
+     */
+    public function setConflictResolver(ConflictResolver $conflictResolver) {}
 
 }

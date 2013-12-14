@@ -125,4 +125,25 @@ class Object
      */
     public function getLinkList() {}
 
+    /**
+     * @return string|null
+     */
+    public function getVClock() {}
+
+    /**
+     * @param string $vclock
+     * @return string|null
+     */
+    public function setVClock($vclock) {}
+
+    /** Get last modified if set by riak
+     * @return int|null
+     */
+    public function getLastModified() {}
+
+    /** Get last modified usec if set by riak
+     * @return int|null
+     */
+    public function getLastModifiedUSecs() {}
+
 }
