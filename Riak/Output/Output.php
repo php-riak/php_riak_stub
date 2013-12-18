@@ -58,10 +58,6 @@ class Output
      * ConflictResolver given when ->get() was called or if no resolver was set it will se if a resolver
      * is set on bucket level and call that.
      * If no unique object can be resolve a NonUniqueException will be thrown.
-     * IMPORTANT! This function will automatically put the resolve object back to riak when resolved.
-     *   If you do not want this behaviour you can do the following instead:
-     *   call Output->getObjectList() and send the list to the resolver by calling ConflictResolver->resolve
-     *   this way no put will be performed.
      * @return \Riak\Object|null
      * @throws UnresolvedConflictException
      * @throws NonUniqueException
