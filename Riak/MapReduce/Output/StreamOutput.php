@@ -8,5 +8,5 @@ interface StreamOutput {
      * @param Output $response
      * @return void
      */
-    public function receive(Output $response);
+    public function receive($response);
 }
