@@ -21,8 +21,9 @@ class Bucket
      * Create a new bucket object
      * @param Connection $connection riak connection
      * @param string $name name of the bucket
+     * @param null|string $type optional bucket type
      */
-    public function __construct(Connection $connection, $name) {}
+    public function __construct(Connection $connection, $name, $type = null) {}
 
     /**
      * Store an object

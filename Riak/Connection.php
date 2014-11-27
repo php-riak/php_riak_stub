@@ -40,9 +40,10 @@ class Connection
     /**
      * Get a named bucket, creates a new Bucket object if no bucket exist with given name.
      * @param string $name
+     * @param null|string $type optional bucket type
      * @return Bucket
      */
-    public function getBucket($name) {}
+    public function getBucket($name, $type = null) {}
 
     /**
      * @return ServerInfo
