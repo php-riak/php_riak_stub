@@ -29,34 +29,37 @@ class Bucket
      * Store an object
      * @param \Riak\Object $object
      * @param Input\PutInput $input optional put request input
+     * @param int $timeout timeout 0 => no timeout
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
      * @return \Riak\Output\PutOutput
      */
-    public function put(Object $object, PutInput $input = null) {}
+    public function put(Object $object, PutInput $input = null, $timeout = 0) {}
 
     /**
      * Retrive an object from riak, if the key is not found on server an not found exception is thrown.
      * @param string $key
      * @param Input\GetInput $input optional get request input
+     * @param int $timeout timeout 0 => no timeout
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
      * @return \Riak\Output\GetOutput
      */
-    public function get($key, $input = null) {}
+    public function get($key, $input = null, $timeout = 0) {}
 
     /**
      * Deletes an object from the server
      * @param \Riak\Object|string $object object or name of object to delete
      * @param DeleteInput $input
+     * @param int $timeout timeout 0 => no timeout
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
      * @return void
      */
-    public function delete($object, $input = null) {}
+    public function delete($object, $input = null, $timeout = 0) {}
 
     /**
      * @param string $key
@@ -86,23 +89,25 @@ class Bucket
     /**
      * List all keys in the bucket.
      * WARNING!! do not use this function in production
+     * @param int $timeout timeout 0 => no timeout
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
      * @return string[]
      */
-    public function getKeyList() {}
+    public function getKeyList($timeout = 0) {}
 
     /**
      * Stream all keys in the bucket
      * WARNING do not use this function in production
      * @param Output\KeyStreamOutput $stream object that will get the stream callbacks
+     * @param int $timeout timeout 0 => no timeout
      * @throws Exception\BadArgumentsException
      * @throws Exception\UnexpectedResponseException
      * @throws Exception\CommunicationException
      * @return void
      */
-    public function getKeyStream(KeyStreamOutput $stream) {}
+    public function getKeyStream(KeyStreamOutput $stream, $timeout = 0) {}
 
     /**
      * Performs an secondary index query, if no $to is provided the query will match exactly $from and nothing else.
@@ -127,6 +132,12 @@ class Bucket
      * @return string
      */
     public function getName() {}
+
+    /**
+     * Get bucket type of this bucket
+     * @return string
+     */
+    public function getType() {}
 
     /**
      * @return Connection
