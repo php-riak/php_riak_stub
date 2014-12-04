@@ -14,6 +14,16 @@ class BucketPropertyList
 {
 
     /**
+     * @var bool
+     */
+    private $consistent;
+
+    /**
+     * @var string|null
+     */
+    private $datatype;
+
+    /**
      * @param $nVal int n value
      * @param $allowMult bool allow mults
      */
@@ -242,6 +252,7 @@ class BucketPropertyList
 
     /** IMPORTANT Only supported by riak 1.4+
      * @param ModuleFunction $linkFun
+     * @return BucketPropertyList
      */
     public function setLinkFun(ModuleFunction $linkFun) {}
 
@@ -252,6 +263,7 @@ class BucketPropertyList
 
     /** IMPORTANT Only supported by riak 1.4+
      * @param ModuleFunction $cHashKeyFun
+     * @return BucketPropertyList
      */
     public function setCHashKeyFun(ModuleFunction $cHashKeyFun) {}
 
@@ -262,6 +274,7 @@ class BucketPropertyList
 
     /** IMPORTANT Only supported by riak 1.4+
      * @param ReplicationMode $replicationMode
+     * @return BucketPropertyList
      */
     public function setReplicationMode(ReplicationMode $replicationMode) {}
 
@@ -269,5 +282,30 @@ class BucketPropertyList
      * @return ReplicationMode|null
      */
     public function getReplicationMode() {}
+
+    /**
+     * IMPORTANT Only supported by riak 2.0+
+     * @return boolean
+     */
+    public function isConsistent() {}
+
+    /**
+     * @param boolean $consistent
+     * @return BucketPropertyList
+     */
+    public function setConsistent($consistent) {}
+
+    /**
+     * IMPORTANT Only supported by riak 2.0+
+     * @return null|string
+     */
+    public function getDatatype() {}
+
+    /**
+     * @param null|string $datatype
+     * @return BucketPropertyList
+     */
+    public function setDatatype($datatype) {}
+
 
 }
